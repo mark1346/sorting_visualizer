@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Visualiser for Vanilla Bootcamp</title>
+</head>
+
+<body>
+    <div class ="mainpage">
+        <h2>Sorting Visualiser</h2>
+        <br>
+
+        <div class = "input-array">
+            <label for="userInput">5~10개의 숫자를 입력해주세요:</label>
+            <input type="text" id="userInput" placeholder="예시) 5, 3, 10, 4, 9" autofocus >
+            <button id = "getArray">입력</button>
+        </div> 
+        
+        <div class = "input-sorting-algo">
+            <label for="sortAlgo">정렬 알고리즘을 선택해주세요:</label>
+            <select id="sortAlgo" name="algos">
+                <option value="mergesort" selected>Merge Sort</option>
+                <option value="quicksort">Quick Sort</option>
+            </select>
+        </div>
+
+        <button id = "startButton">실행</button>
+        <div class = "done"></div>
+
+        <canvas id="Canvas"></canvas>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
